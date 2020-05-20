@@ -67,16 +67,68 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\bootstrap-grid.css" />
+    <Content Include="Css\bootstrap-grid.min.css" />
+    <Content Include="Css\bootstrap-reboot.css" />
+    <Content Include="Css\bootstrap-reboot.min.css" />
+    <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\StyleSheet.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\login.png" />
+    <Content Include="Js\bootstrap.bundle.js" />
+    <Content Include="Js\bootstrap.bundle.min.js" />
+    <Content Include="Js\bootstrap.js" />
+    <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Js\jquery-3.3.1.min.js" />
+    <Content Include="Js\popper.min.js" />
+    <Content Include="Presentation\AdminForm.aspx" />
+    <Content Include="Presentation\ClientForm.aspx" />
+    <Content Include="Presentation\LoginForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\HouseDB.cs" />
+    <Compile Include="DataAccess\LoginDB.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\House.cs" />
+    <Compile Include="Models\UserLogin.cs" />
+    <Compile Include="Presentation\AdminForm.aspx.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\AdminForm.aspx.designer.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ClientForm.aspx.cs">
+      <DependentUpon>ClientForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\ClientForm.aspx.designer.cs">
+      <DependentUpon>ClientForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\bootstrap-grid.css.map" />
+    <Content Include="Css\bootstrap-grid.min.css.map" />
+    <Content Include="Css\bootstrap-reboot.css.map" />
+    <Content Include="Css\bootstrap-reboot.min.css.map" />
+    <Content Include="Css\bootstrap.css.map" />
+    <Content Include="Css\bootstrap.min.css.map" />
+    <Content Include="Js\bootstrap.bundle.js.map" />
+    <Content Include="Js\bootstrap.bundle.min.js.map" />
+    <Content Include="Js\bootstrap.js.map" />
+    <Content Include="Js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -87,7 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Presentation\houseIMG\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
